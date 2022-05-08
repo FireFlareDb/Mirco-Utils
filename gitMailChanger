@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git filter-branch --env-filter '
 WRONG_EMAIL="wrong@mail.com"
 NEW_NAME="fireflaredb"

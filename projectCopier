@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 CTIME=$(date +%H-%M-%S)
 COPY_LOC="/tmp/TestCurrentProject/$CTIME/"

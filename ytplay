@@ -1,0 +1,18 @@
+#!/bin/sh
+
+QUERY=$(echo "$*" | tr ' ' '+')
+
+
+# Args Checks
+if [ -z "$QUERY" ]
+then
+	echo "Usage:  ytplay [QUERY]"
+	exit 1
+fi
+
+
+URL="https://youtube.com/$(curl -s "https://vid.puffyan.us/search?q=$QUERY" | grep -oE "watch\?v=.{11}" | head -n 1)"
+
+echo $URL 
+
+mpv $URL
