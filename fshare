@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -sS -F "file=@$(find $HOME | fzf)" https://0x0.st | xclip -selection clipboard && xclip -selection clipboard -o
