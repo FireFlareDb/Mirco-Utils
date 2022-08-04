@@ -1,9 +1,9 @@
 # Mirco-Utils
 This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
 
-1. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): Copy PWD Projects Or Files To `tmp dir`  With Persent Date. Helpful In                              Keep Tracking Projects According To Dates And Can We Used As Backup System Or Checkpoint
+1. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): Copy PWD Projects Or Files To `tmp` directory With Persent Time (Format - %H-%M-%S).
 
-2. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open Project In Specfic Paths In Vistual Stdio Code From Termial
+2. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open Project In Specfic Paths In Visual Stdio Code From Termial
 
 3. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove All Commits E-Mail Address And Name Then Add New Ones (This will effect entier repository)
 
