@@ -1,17 +1,41 @@
 # Mirco-Utils
 This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
 
-1. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): Copy PWD Projects Or Files To `tmp` directory With Persent Time (Format - %H-%M-%S).
+1. [Fshare](https://github.com/FlareXes/Mirco-Utils/blob/main/fshare): Allow file sharing from terminal using fzf and stdout shareable link
 
-2. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open Project In Specfic Paths In Visual Stdio Code From Termial
+2. [YtPlay](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytplay): Play youtube video in mpv by taking search query as argument
+   
+3. [YtFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytfzf): Search youtube video using fzf then play selected video in mpv, simply better version of YtPlay
 
-3. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove All Commits E-Mail Address And Name Then Add New Ones (This will effect entier repository)
+4. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones (This will effect entire repository)
 
-4. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift Snaps By Taking A File Name As Argument Consists Names Of Snaps 
+5. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
 
-5. [YtPlay](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytplay): Play youtube video in mpv by taking search query as argument
+6. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time (Format - %H-%M-%S).
 
-6. [Fshare](https://github.com/FlareXes/Mirco-Utils/blob/main/fshare): Allow File Sharing From Terminal Using Fuzzy Finder And Stdout Shareable Link
+7. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+
+
+# Installations
+
+### YtFzf Installation
+> Original Project By [pystardust](https://github.com/pystardust/ytfzf)
+```
+wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytfzf -O /usr/local/bin/ytfzf
+
+sudo chmod +x /usr/local/bin/ytfzf
+
+ytfzf <QUERY>
+```
+
+### YtPlay Installation
+```
+wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytplay -O /usr/local/bin/ytplay
+
+sudo chmod +x /usr/local/bin/ytplay
+
+ytplay <QUERY>
+```
 ### Fshare Installation
 ```
 wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/fshare -O /usr/local/bin/fshare
