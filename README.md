@@ -21,7 +21,7 @@ This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
 ### YtFzf Installation
 > Original Project By [pystardust](https://github.com/pystardust/ytfzf)
 ```
-wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytfzf -O /usr/local/bin/ytfzf
+sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytfzf -O /usr/local/bin/ytfzf
 
 sudo chmod +x /usr/local/bin/ytfzf
 
@@ -30,7 +30,7 @@ ytfzf <QUERY>
 
 ### YtPlay Installation
 ```
-wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytplay -O /usr/local/bin/ytplay
+sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytplay -O /usr/local/bin/ytplay
 
 sudo chmod +x /usr/local/bin/ytplay
 
@@ -38,7 +38,7 @@ ytplay <QUERY>
 ```
 ### Fshare Installation
 ```
-wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/fshare -O /usr/local/bin/fshare
+sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/fshare -O /usr/local/bin/fshare
 
 sudo chmod +x /usr/local/bin/fshare
 
