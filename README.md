@@ -7,14 +7,15 @@ This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
    
 3. [YtFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytfzf): Search youtube video using fzf then play selected video in mpv, simply better version of YtPlay
 
-4. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones (This will effect entire repository)
+4. [EmoFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/emofzf): Search and copy emoji using fzf
 
-5. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
+5. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones (This will effect entire repository)
 
-6. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time (Format - %H-%M-%S).
+6. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
 
-7. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+7. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time (Format - %H-%M-%S).
 
+8. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
 
 # Installations
 
@@ -43,6 +44,15 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/fshare -O 
 sudo chmod +x /usr/local/bin/fshare
 
 fshare
+```
+
+### EmoFzf Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/emofzf -O /usr/local/bin/emofzf
+
+sudo chmod +x /usr/local/bin/emofzf
+
+emofzf
 ```
 
 # License
