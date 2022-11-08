@@ -5,17 +5,19 @@ This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
 
 2. [YtPlay](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytplay): Play youtube video in mpv by taking search query as argument
    
-3. [YtFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytfzf): Search youtube video using fzf then play selected video in mpv, simply better version of YtPlay
+3. [YtFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
 4. [EmoFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/emofzf): Search and copy emoji using fzf
 
-5. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones (This will effect entire repository)
+5. [MyMan](https://github.com/FireFlareDb/Mirco-Utils/blob/main/myman): Preview man pages
 
-6. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
+6. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
 
-7. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time (Format - %H-%M-%S).
+7. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
 
-8. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+8. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time
+
+9. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
 
 # Installations
 
@@ -53,6 +55,15 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/emofzf -O 
 sudo chmod +x /usr/local/bin/emofzf
 
 emofzf
+```
+
+### MyMan Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/myman -O /usr/local/bin/myman
+
+sudo chmod +x /usr/local/bin/myman
+
+myman
 ```
 
 # License
