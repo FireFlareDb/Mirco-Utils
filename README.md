@@ -1,31 +1,30 @@
-# Mirco-Utils
+# Utils
 This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
 
-1. [Fshare](https://github.com/FlareXes/Mirco-Utils/blob/main/fshare): Allow file sharing from terminal using fzf and stdout shareable link
+1. [Fshare](https://github.com/FlareXes/utils/blob/main/fshare): Allow file sharing from terminal using fzf and stdout shareable link
 
-2. [YtPlay](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytplay): Play youtube video in mpv by taking search query as argument
+2. [YtPlay](https://github.com/FireFlareDb/utils/blob/main/ytplay): Play youtube video in mpv by taking search query as argument
    
-3. [YtFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
+3. [YtFzf](https://github.com/FireFlareDb/utils/blob/main/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
-4. [EmoFzf](https://github.com/FireFlareDb/Mirco-Utils/blob/main/emofzf): Search and copy emoji using fzf
+4. [EmoFzf](https://github.com/FireFlareDb/utils/blob/main/emofzf): Search and copy emoji using fzf
 
-5. [MyMan](https://github.com/FireFlareDb/Mirco-Utils/blob/main/myman): Preview man pages
+5. [MyMan](https://github.com/FireFlareDb/utils/blob/main/myman): Preview man pages
 
-6. [GitMailChanger](https://github.com/FireFlareDb/Mirco-Utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
+6. [GitMailChanger](https://github.com/FireFlareDb/utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
 
-7. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/Mirco-Utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
+7. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
 
-8. [ProjectCopier](https://github.com/FireFlareDb/Mirco-Utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time
+8. [ProjectCopier](https://github.com/FireFlareDb/utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time
 
-9. [VsCodeProjectOpen](https://github.com/FireFlareDb/Mirco-Utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+9. [VsCodeProjectOpen](https://github.com/FireFlareDb/utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
 
 # Installations
 
 ### YtFzf Installation
 > Original Project By [pystardust](https://github.com/pystardust/ytfzf)
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytfzf -O /usr/local/bin/ytfzf
-
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/ytfzf -O /usr/local/bin/ytfzf
 sudo chmod +x /usr/local/bin/ytfzf
 
 ytfzf <QUERY>
@@ -33,7 +32,7 @@ ytfzf <QUERY>
 
 ### YtPlay Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/ytplay -O /usr/local/bin/ytplay
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/ytplay -O /usr/local/bin/ytplay
 
 sudo chmod +x /usr/local/bin/ytplay
 
@@ -41,7 +40,7 @@ ytplay <QUERY>
 ```
 ### Fshare Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/fshare -O /usr/local/bin/fshare
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/fshare -O /usr/local/bin/fshare
 
 sudo chmod +x /usr/local/bin/fshare
 
@@ -50,7 +49,7 @@ fshare
 
 ### EmoFzf Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/emofzf -O /usr/local/bin/emofzf
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/emofzf -O /usr/local/bin/emofzf
 
 sudo chmod +x /usr/local/bin/emofzf
 
@@ -59,7 +58,7 @@ emofzf
 
 ### MyMan Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Mirco-Utils/main/myman -O /usr/local/bin/myman
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/myman -O /usr/local/bin/myman
 
 sudo chmod +x /usr/local/bin/myman
 
