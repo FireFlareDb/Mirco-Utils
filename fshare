@@ -1,2 +1,12 @@
 #!/bin/sh
-curl -sS -F "file=@$(find $HOME | fzf)" https://0x0.st | xclip -selection clipboard && xclip -selection clipboard -o
+
+LOCATION="$@"
+
+if [[ $LOCATION == "" ]];
+then
+    LOCATION="$HOME"
+fi
+
+curl -sS -F "file=@$(find $LOCATION | fzf)" https://0x0.st | xclip -selection clipboard && xclip -selection clipboard -o
+
+exit
