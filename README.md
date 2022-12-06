@@ -7,19 +7,19 @@ This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
    
 3. [YtFzf](https://github.com/FireFlareDb/utils/blob/main/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
-3. [YtFzf](https://github.com/FireFlareDb/utils/blob/main/passrofi): rofi dmenu for pass-otp
+4. [Passrofi](https://github.com/FireFlareDb/utils/blob/main/passrofi): rofi dmenu for pass-otp
 
-4. [EmoFzf](https://github.com/FireFlareDb/utils/blob/main/emofzf): Search and copy emoji using fzf
+5. [EmoFzf](https://github.com/FireFlareDb/utils/blob/main/emofzf): Search and copy emoji using fzf
 
-5. [MyMan](https://github.com/FireFlareDb/utils/blob/main/myman): Preview man pages
+6. [MyMan](https://github.com/FireFlareDb/utils/blob/main/myman): Preview man pages
 
-6. [GitMailChanger](https://github.com/FireFlareDb/utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
+7. [GitMailChanger](https://github.com/FireFlareDb/utils/blob/main/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
 
-7. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
+8. [MultiTimeshiftSnapRemover](https://github.com/FireFlareDb/utils/blob/main/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
 
-8. [ProjectCopier](https://github.com/FireFlareDb/utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time
+9. [ProjectCopier](https://github.com/FireFlareDb/utils/blob/main/projectCopier): copy pwd projects or files to `tmp` directory with current time
 
-9. [VsCodeProjectOpen](https://github.com/FireFlareDb/utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+10. [VsCodeProjectOpen](https://github.com/FireFlareDb/utils/blob/main/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
 
 # Installations
 
