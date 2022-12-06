@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# you can set keybinding in sxhkrc for better usecase
+# alt + shift + l
+#   sh /usr/local/bin/passrofi
+
+export LANG="en_US.UTF-8"
+
+ls ~/.password-store | rofi -dmenu -p "OTP: "  | cut --delimiter="." --fields=1 | xargs -I {} pass otp {} | xargs -I {} xdotool type --window getactivewindow {}

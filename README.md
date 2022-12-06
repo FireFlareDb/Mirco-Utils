@@ -7,6 +7,8 @@ This Repository Contains Some Basic Utilities Helpful In Projects Or Basic Tasks
    
 3. [YtFzf](https://github.com/FireFlareDb/utils/blob/main/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
+3. [YtFzf](https://github.com/FireFlareDb/utils/blob/main/passrofi): rofi dmenu for pass-otp
+
 4. [EmoFzf](https://github.com/FireFlareDb/utils/blob/main/emofzf): Search and copy emoji using fzf
 
 5. [MyMan](https://github.com/FireFlareDb/utils/blob/main/myman): Preview man pages
@@ -45,6 +47,15 @@ sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/fshare -O /u
 sudo chmod +x /usr/local/bin/fshare
 
 fshare
+```
+
+### Passrofi Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/passrofi -O /usr/local/bin/passrofi
+
+sudo chmod +x /usr/local/bin/passrofi
+
+passrofi
 ```
 
 ### EmoFzf Installation
