@@ -13,13 +13,7 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 6. [MyMan](https://github.com/FlareXes/utils/blob/main/bin/myman): Preview man pages
 
-7. [GitMailChanger](https://github.com/FlareXes/utils/blob/main/bin/gitMailChanger): Remove all commits E-mail addresses and Names then add new ones
-
-8. [MultiTimeshiftSnapRemover](https://github.com/FlareXes/utils/blob/main/bin/multiTimeshiftSnapRemover): Remove Timeshift snaps by taking a file name as argument consists names of snaps
-
-9. [ProjectCopier](https://github.com/FlareXes/utils/blob/main/bin/projectCopier): copy pwd projects or files to `tmp` directory with current time
-
-10. [VsCodeProjectOpen](https://github.com/FlareXes/utils/blob/main/bin/vsCodeProjectOpen): Open project in specific paths in vscode from terminal
+7. [GitMailChanger](https://github.com/FlareXes/utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
 
 # Installations
 
