@@ -1,26 +1,26 @@
 # Utils
 This Repository Contains Amazing Utilities For Simpler Tasks.
 
-1. [Fshare](https://github.com/FlareXes/utils/blob/main/bin/fshare): Allow file sharing from terminal using fzf and stdout shareable link
+1. [Fshare](https://github.com/FlareXes/Micro-Utils/blob/main/bin/fshare): Allow file sharing from terminal using fzf and stdout shareable link
 
-2. [YtPlay](https://github.com/FlareXes/utils/blob/main/bin/ytplay): Play youtube video in mpv by taking search query as argument
+2. [YtPlay](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytplay): Play youtube video in mpv by taking search query as argument
    
-3. [YtFzf](https://github.com/FlareXes/utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
+3. [YtFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
-4. [Passrofi](https://github.com/FlareXes/utils/blob/main/bin/passrofi): rofi dmenu for pass-otp
+4. [Passrofi](https://github.com/FlareXes/Micro-Utils/blob/main/bin/passrofi): rofi dmenu for pass-otp
 
-5. [EmoFzf](https://github.com/FlareXes/utils/blob/main/bin/emofzf): Search and copy emoji using fzf
+5. [EmoFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/emofzf): Search and copy emoji using fzf
 
-6. [MyMan](https://github.com/FlareXes/utils/blob/main/bin/myman): Preview man pages
+6. [MyMan](https://github.com/FlareXes/Micro-Utils/blob/main/bin/myman): Preview man pages
 
-7. [GitMailChanger](https://github.com/FlareXes/utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
+7. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
 
 # Installations
 
 ### YtFzf Installation
 > Original Project By [pystardust](https://github.com/pystardust/ytfzf)
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/ytfzf -O /usr/local/bin/ytfzf
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytfzf -O /usr/local/bin/ytfzf
 sudo chmod +x /usr/local/bin/ytfzf
 
 ytfzf <QUERY>
@@ -28,7 +28,7 @@ ytfzf <QUERY>
 
 ### YtPlay Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/ytplay -O /usr/local/bin/ytplay
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytplay -O /usr/local/bin/ytplay
 
 sudo chmod +x /usr/local/bin/ytplay
 
@@ -36,7 +36,7 @@ ytplay <QUERY>
 ```
 ### Fshare Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/fshare -O /usr/local/bin/fshare
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare -O /usr/local/bin/fshare
 
 sudo chmod +x /usr/local/bin/fshare
 
@@ -45,7 +45,7 @@ fshare
 
 ### Passrofi Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/passrofi -O /usr/local/bin/passrofi
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/passrofi -O /usr/local/bin/passrofi
 
 sudo chmod +x /usr/local/bin/passrofi
 
@@ -54,7 +54,7 @@ passrofi
 
 ### EmoFzf Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/emofzf -O /usr/local/bin/emofzf
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/emofzf -O /usr/local/bin/emofzf
 
 sudo chmod +x /usr/local/bin/emofzf
 
@@ -63,7 +63,7 @@ emofzf
 
 ### MyMan Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/utils/main/bin/myman -O /usr/local/bin/myman
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/myman -O /usr/local/bin/myman
 
 sudo chmod +x /usr/local/bin/myman
 
