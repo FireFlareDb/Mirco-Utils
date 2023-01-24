@@ -70,6 +70,20 @@ sudo chmod +x /usr/local/bin/myman
 myman
 ```
 
+---
+
+### ***macspoof@.service*** Installation
+```
+sudo pacman -S macchanger
+
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/systemd-unit/macspoof@.service -O /etc/systemd/system/macspoof@.service
+
+# sudo systemctl enable macspoof@<INTERFACE>.service. Example 👇
+
+sudo systemctl enable macspoof@wlan0.service
+```
+
+
 # License
 Unlicense
 
