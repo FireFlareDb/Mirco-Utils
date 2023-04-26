@@ -1,0 +1,42 @@
+#!/bin/bash
+
+set -e
+
+dir="$1"
+tar_file="${dir}.tar.gz"
+self_extract_script="${dir}-selfextract.sh"
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 directory_to_compress" >&2
+  exit 1
+fi
+
+
+if [[ ! -d "$dir" && ! -f "$dir" ]]; then
+  echo "$dir does not exist" >&2
+  exit 2
+fi
+
+# Archive the file or directory 
+tar -czf "$tar_file" "$dir"
+
+# Base64 encode the archived file
+targz=$(base64 -w 0 "$tar_file")
+
+# Create self extracting shell script with encode data
+cat > "$self_extract_script" << EOF
+#!/bin/bash
+set -e
+
+# Extract the base64-encoded tar.gz file
+sed '0,/^#EOF#$/d' "\$0" | base64 -d | tar -xz
+
+exit 0
+
+#EOF#
+$targz
+EOF
+
+chmod +x "$self_extract_script"
+
+echo "Self-extracting script created: $self_extract_script"

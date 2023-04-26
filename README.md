@@ -15,6 +15,8 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 7. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
 
+8. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
+
 # Installations
 
 ### YtFzf Installation
@@ -42,6 +44,16 @@ sudo chmod +x /usr/local/bin/fshare
 
 fshare
 ```
+
+### Selftar Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/selftar -O /usr/local/bin/selftar
+
+sudo chmod +x /usr/local/bin/selftar
+
+selftar
+```
+
 
 ### Passrofi Installation
 ```
