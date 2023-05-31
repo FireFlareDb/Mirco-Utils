@@ -17,6 +17,8 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 8. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
 
+9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks Malicious File Using VirusTotal CLI
+
 # Installations
 
 ### YtFzf Installation
@@ -36,6 +38,7 @@ sudo chmod +x /usr/local/bin/ytplay
 
 ytplay <QUERY>
 ```
+
 ### Fshare Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare -O /usr/local/bin/fshare
@@ -43,6 +46,14 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare
 sudo chmod +x /usr/local/bin/fshare
 
 fshare
+```
+
+### VirusTotal Installation
+> **Warning** : It's not official VirusTotal utility or installation guide
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/virustotal -O /usr/local/bin/virustotal
+
+sudo chmod +x /usr/local/bin/virustotal
 ```
 
 ### Selftar Installation
@@ -53,7 +64,6 @@ sudo chmod +x /usr/local/bin/selftar
 
 selftar
 ```
-
 
 ### Passrofi Installation
 ```

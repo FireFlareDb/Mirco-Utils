@@ -1,0 +1,46 @@
+#!/bin/bash
+
+set -e  # Enable errexit option
+
+filename=$1
+
+# Check if a filename argument is provided
+if [[ $# -eq 0 ]]; then
+    echo "Please provide a filename as an argument to scan."
+    exit 1
+fi
+
+# Check if the file exists
+if [[ ! -f $filename ]]; then
+    echo "File $filename does not exist."
+    exit 1
+fi
+
+# Calculate the hash of the file
+hash=$(sha256sum "$filename" | cut -d " " -f 1)
+
+# Scan the file using VirusTotal
+vt file --include="**.category,**.result" "$hash"
+
+read -p "Scan this file (y/N): " ans
+
+if [[ $ans == "y" ]]; then
+    # Initiate the file scan and get the scan token
+    file_token=$(vt scan file "$filename" | cut -d " " -f 2)
+
+    echo "Waiting for 10 seconds to complete the scan..."
+    sleep 10
+
+    while true; do
+        # Check the analysis status of the file
+        vt analysis --include="**.category,**.result" "$file_token"
+
+        read -p "Re-Check Status (y/N): " retry
+
+        if [[ $retry != "y" ]]; then
+            break
+        fi
+    done
+else
+    echo "Aborted"
+fi
