@@ -25,14 +25,15 @@ vt file --include="**.category,**.result" "$hash"
 read -p "Scan this file (y/N): " ans
 
 if [[ $ans == "y" ]]; then
-    # Initiate the file scan and get the scan token
     echo "Wait! uploading file to VirusTotal..."
+
+    # Initiate the file scan and get the scan token
     file_token=$(vt scan file "$filename" | cut -d " " -f 2)
 
-    echo "Waiting for 10 seconds to complete the scan..."
-    sleep 10
-
     while true; do
+        echo "Waiting for 10 seconds to complete the scan..."
+        sleep 10
+
         # Check the analysis status of the file
         vt analysis --include="**.category,**.result" "$file_token"
 
