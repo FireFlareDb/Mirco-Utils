@@ -26,6 +26,7 @@ read -p "Scan this file (y/N): " ans
 
 if [[ $ans == "y" ]]; then
     # Initiate the file scan and get the scan token
+    echo "Wait! uploading file to VirusTotal..."
     file_token=$(vt scan file "$filename" | cut -d " " -f 2)
 
     echo "Waiting for 10 seconds to complete the scan..."
