@@ -1,0 +1,15 @@
+[Unit]
+Description=Change machine id on shutdown
+DefaultDependencies=no
+Conflicts=reboot.target
+Before=poweroff.target halt.target shutdown.target
+Requires=poweroff.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/radowoo/.scripts/change-machine-id.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=shutdown.target
+
