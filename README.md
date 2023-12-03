@@ -19,6 +19,8 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks Malicious File Using VirusTotal CLI
 
+10. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/Earbuds): Connect bluetooth device
+
 # Installations
 
 ### YtFzf Installation
@@ -46,6 +48,13 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare
 sudo chmod +x /usr/local/bin/fshare
 
 fshare
+```
+
+### Earbuds Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/earbuds -O /usr/local/bin/earbuds
+
+earbuds
 ```
 
 ### VirusTotal Installation

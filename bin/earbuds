@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Define the MAC address of the Bluetooth device
+DEVICE_MAC=""
+
+if [ -n "$1" ]; then
+  # If an argument is provided, turn off Bluetooth
+  bluetoothctl power off
+else
+  # If no argument is provided, turn on Bluetooth, disconnect, and reconnect to the device
+  bluetoothctl power on
+  # sleep 1
+  bluetoothctl disconnect $DEVICE_MAC
+  bluetoothctl connect $DEVICE_MAC
+fi
