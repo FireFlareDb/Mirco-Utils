@@ -19,7 +19,7 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks Malicious File Using VirusTotal CLI
 
-10. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/Earbuds): Connect bluetooth device
+10. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
 
 # Installations
 
