@@ -17,9 +17,11 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 8. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
 
-9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks Malicious File Using VirusTotal CLI
+9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks malicious file using virusTotal CLI
 
 10. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
+
+11. [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
 
 # Installations
 
@@ -27,7 +29,6 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 > Original Project By [pystardust](https://github.com/pystardust/ytfzf)
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytfzf -O /usr/local/bin/ytfzf
-sudo chmod +x /usr/local/bin/ytfzf
 
 ytfzf <QUERY>
 ```
@@ -36,16 +37,12 @@ ytfzf <QUERY>
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytplay -O /usr/local/bin/ytplay
 
-sudo chmod +x /usr/local/bin/ytplay
-
 ytplay <QUERY>
 ```
 
 ### Fshare Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare -O /usr/local/bin/fshare
-
-sudo chmod +x /usr/local/bin/fshare
 
 fshare
 ```
@@ -57,19 +54,22 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/earbud
 earbuds
 ```
 
+### Speak Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/speak -O /usr/local/bin/speak
+
+speak Hello World
+```
+
 ### VirusTotal Installation
 > **Warning** : It's not official VirusTotal utility or installation guide
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/virustotal -O /usr/local/bin/virustotal
-
-sudo chmod +x /usr/local/bin/virustotal
 ```
 
 ### Selftar Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/selftar -O /usr/local/bin/selftar
-
-sudo chmod +x /usr/local/bin/selftar
 
 selftar
 ```
@@ -78,8 +78,6 @@ selftar
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/passrofi -O /usr/local/bin/passrofi
 
-sudo chmod +x /usr/local/bin/passrofi
-
 passrofi
 ```
 
@@ -87,16 +85,12 @@ passrofi
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/emofzf -O /usr/local/bin/emofzf
 
-sudo chmod +x /usr/local/bin/emofzf
-
 emofzf
 ```
 
 ### MyMan Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/myman -O /usr/local/bin/myman
-
-sudo chmod +x /usr/local/bin/myman
 
 myman
 ```
