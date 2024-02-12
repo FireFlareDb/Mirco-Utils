@@ -1,22 +1,26 @@
 #!/bin/sh
 
+# Check if XDG_SESSION_TYPE is set and select tools compatibile to display server.
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+  CLIPBOARD_COMMAND="wl-copy"
+else
+  CLIPBOARD_COMMAND="xclip -selection clipboard"
+fi
+
 LOCATION="$@"
 
-# Set location to user's home directory
-# if no argument is passed.
+# Set location to user's home directory if no argument is passed.
 if [[ $LOCATION == "" ]]; then
     LOCATION="$HOME"
 fi
 
 if [[ -f $LOCATION ]]; then
   # Upload file to 0x0.st if passed argument is a file
-  # and store link in url
   url=$(curl -sS -F "file=@$LOCATION" https://0x0.st)
 else
-  # get filename using fzf in passed argument location
-  # then upload to 0x0.st and store link in url.
+  # get filename using fzf in passed argument location then upload to 0x0.st
   url=$(curl -sS -F "file=@$(find $LOCATION | fzf)" https://0x0.st)
 fi
 
 # Copy url to clip board and print of stdout
-echo "$url" | xclip -selection clipboard; echo "$url"
+echo "$url" | $CLIPBOARD_COMMAND; echo "$url"
