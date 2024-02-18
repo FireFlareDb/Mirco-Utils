@@ -3,15 +3,13 @@
 model[0]="/opt/piper/en/en_GB/alba/medium/en_GB-alba-medium.onnx"
 model[1]="/opt/piper/en/en_GB/aru/medium/en_GB-aru-medium.onnx"
 model[2]="/opt/piper/en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium.onnx"
-model[3]="/opt/piper/en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium.onnx"
-model[4]="/opt/piper/en/en_GB/semaine/medium/en_GB-semaine-medium.onnx"
-model[5]="/opt/piper/en/en_US/lessac/medium/en_US-lessac-medium.onnx"
-model[6]="/opt/piper/en/en_US/lessac/high/en_US-lessac-high.onnx"
-model[7]="/opt/piper/en/en_US/libritts/high/en_US-libritts-high.onnx"
-model[8]="/opt/piper/en/en_US/ryan/high/en_US-ryan-high.onnx"
-model[9]="/opt/piper/en/en_US/ryan/medium/en_US-ryan-medium.onnx"
+model[3]="/opt/piper/en/en_GB/semaine/medium/en_GB-semaine-medium.onnx"
+model[4]="/opt/piper/en/en_US/libritts/high/en_US-libritts-high.onnx"
+model[5]="/opt/piper/en/en_US/ryan/medium/en_US-ryan-medium.onnx"
 
 size=${#model[@]}
 index=$(($RANDOM % $size))
+model=${model[$index]}
 
-echo "$([ $# -eq 0 ] && cat || echo "$@")" | /opt/piper/piper --quiet --output-raw --model "${model[$index]}" | aplay -q -r 22050 -f S16_LE -t raw -
+echo "Voice Model: $model"
+echo "$([ $# -eq 0 ] && cat || echo "$@")" | /opt/piper/piper --quiet --output-raw --model "$model" --output_file "/tmp/piper_output_file_voice.wav" && mpv /tmp/piper_output_file_voice.wav
