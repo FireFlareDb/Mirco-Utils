@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Define source and destination paths
+source_dir="/home/user/"
+destination_dir="/media/backup/$(date +'%F')"
+
+# Define max file size (possible values: e.g., "5G" for 5 gigabytes, "100M" for 100 megabytes)
+max_size="1G"
+
+# Execute rsync command and measure time
+time rsync -azh --delete --info=PROGRESS2 --max-size="$max_size" --exclude={'.cache/','Steam/'} "$source_dir" "$destination_dir"

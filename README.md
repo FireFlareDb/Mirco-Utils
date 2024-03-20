@@ -23,6 +23,8 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 11. [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
 
+12. [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
+
 # Installations
 
 ### YtFzf Installation
@@ -33,11 +35,11 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytfzf 
 ytfzf <QUERY>
 ```
 
-### YtPlay Installation
+### Its-Backup-Time Installation
 ```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytplay -O /usr/local/bin/ytplay
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/its-backup-time -O /usr/local/bin/its-backup-time
 
-ytplay <QUERY>
+its-backup-time
 ```
 
 ### Fshare Installation
@@ -86,6 +88,13 @@ passrofi
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/emofzf -O /usr/local/bin/emofzf
 
 emofzf
+```
+
+### YtPlay Installation
+```
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytplay -O /usr/local/bin/ytplay
+
+ytplay <QUERY>
 ```
 
 ### MyMan Installation
