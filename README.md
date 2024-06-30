@@ -1,29 +1,19 @@
 # Utils
 This Repository Contains Amazing Utilities For Simpler Tasks.
-
-1. [Fshare](https://github.com/FlareXes/Micro-Utils/blob/main/bin/fshare): Allow file sharing from terminal using fzf and stdout shareable link
-
-2. [YtPlay](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytplay): Play youtube video in mpv by taking search query as argument
    
-3. [YtFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
+1. [YtFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
-4. [Passrofi](https://github.com/FlareXes/Micro-Utils/blob/main/bin/passrofi): rofi dmenu for pass-otp
+2. [MyMan](https://github.com/FlareXes/Micro-Utils/blob/main/bin/myman): Preview man pages
 
-5. [EmoFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/emofzf): Search and copy emoji using fzf
+3. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
 
-6. [MyMan](https://github.com/FlareXes/Micro-Utils/blob/main/bin/myman): Preview man pages
+4. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
 
-7. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
+5.  [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
 
-8. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
+6.  [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
 
-9. [VirusTotal](https://github.com/FlareXes/Micro-Utils/blob/main/bin/virustotal): Checks malicious file using virusTotal CLI
-
-10. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
-
-11. [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
-
-12. [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
+7.  [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
 
 # Installations
 
@@ -42,13 +32,6 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/its-ba
 its-backup-time
 ```
 
-### Fshare Installation
-```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/fshare -O /usr/local/bin/fshare
-
-fshare
-```
-
 ### Earbuds Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/earbuds -O /usr/local/bin/earbuds
@@ -63,38 +46,11 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/speak 
 speak Hello World
 ```
 
-### VirusTotal Installation
-> **Warning** : It's not official VirusTotal utility or installation guide
-```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/virustotal -O /usr/local/bin/virustotal
-```
-
 ### Selftar Installation
 ```
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/selftar -O /usr/local/bin/selftar
 
 selftar
-```
-
-### Passrofi Installation
-```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/passrofi -O /usr/local/bin/passrofi
-
-passrofi
-```
-
-### EmoFzf Installation
-```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/emofzf -O /usr/local/bin/emofzf
-
-emofzf
-```
-
-### YtPlay Installation
-```
-sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytplay -O /usr/local/bin/ytplay
-
-ytplay <QUERY>
 ```
 
 ### MyMan Installation
