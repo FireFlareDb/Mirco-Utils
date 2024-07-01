@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+# Author: FlareXes
+# License: Unlicense
+# Script URL: https://github.com/FlareXes/Micro-Utils/blob/main/bin/say
+
+# NOTE: Just run the script, It will automatically install the dependencies and create the /opt/self-hosted directory.
+# Once the script is done, you can run the script again for speech synthesis.
+
+self_hosted_dir="/opt/self-hosted"
+styletts2_dir="/opt/self-hosted/StyleTTS2"
+
+# Create and change ownership of /opt/self-hosted directory
+if [ ! -d "$self_hosted_dir" ]; then
+    if ! sudo mkdir -p "$self_hosted_dir"; then
+        echo "Error: Failed to create the $self_hosted_dir directory"; exit 1
+    fi
+    
+    # Change ownership of /opt/self-hosted directory to current user
+    if ! sudo chown -R $(whoami) "$self_hosted_dir"; then
+        echo "Error: Failed to change ownership of $self_hosted_dir to $(whoami)"; exit 1
+    fi
+fi
+
+# Create the /opt/self-hosted/StyleTTS2 directory if it does not exist
+if ! [ -d "$styletts2_dir" ]; then
+    if ! mkdir -p "$styletts2_dir"; then
+        echo "Error: Failed to create the $styletts2_dir directory"; exit 1
+    fi
+    
+    # Create python virtual environment to install dependencies
+    if ! python3 -m venv "$styletts2_dir/venv"; then
+        echo "Error: Failed to create virtual environment of $styletts2_dir"; exit 1
+    fi
+    
+    # Install dependencies
+    if ! "$styletts2_dir/venv/bin/python3" -m pip install styletts2; then
+        echo "Error: Failed to install the dependencies"; exit 1
+    fi
+    
+    styletts2_script="https://gist.githubusercontent.com/FlareXes/5d37a38bf26de34e03f2dbbe7b740f10/raw/8784f89331fd17739e0a263196bd2115a2f453c1/tts.py"
+    
+    if ! curl $styletts2_script -o "$styletts2_dir/tts.py"; then
+        echo "Error: Failed to download StyleTTS2 script"; exit 1
+    fi
+fi
+
+# Text to speech
+read -p "Text: " text
+
+# Convert text to wav
+date_time=$(date +"%Y-%m-%dT%H:%M:%S%z")
+output="/tmp/styletts2_$date_time.wav"
+
+if ! echo "$text" | "$styletts2_dir/venv/bin/python3" "$styletts2_dir/tts.py" "$output" ; then
+    echo "Error: Failed to convert text to wav"; exit 1
+fi
+
+mpv $output
