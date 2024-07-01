@@ -1,7 +1,5 @@
 # Utils
 This Repository Contains Amazing Utilities For Simpler Tasks.
-   
-
 
 1. [Say](https://github.com/FlareXes/Micro-Utils/blob/main/bin/say): Text to speech, better quality and easier setup than speak.
 
@@ -32,44 +30,63 @@ echo "Hello World" | say
 ```
 
 ### YtFzf Installation
+
 > Original Project By [pystardust](https://github.com/pystardust/ytfzf)
+
 ```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/ytfzf -O /usr/local/bin/ytfzf
+
+sudo chmod +x /usr/local/bin/ytfzf
 
 ytfzf <QUERY>
 ```
 
 ### Its-Backup-Time Installation
-```
+
+```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/its-backup-time -O /usr/local/bin/its-backup-time
+
+sudo chmod +x /usr/local/bin/its-backup-time
 
 its-backup-time
 ```
 
 ### Earbuds Installation
-```
+
+```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/earbuds -O /usr/local/bin/earbuds
+
+sudo chmod +x /usr/local/bin/earbuds
 
 earbuds
 ```
 
 ### Speak Installation
-```
+
+```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/speak -O /usr/local/bin/speak
+
+sudo chmod +x /usr/local/bin/speak
 
 speak Hello World
 ```
 
 ### Selftar Installation
-```
+
+```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/selftar -O /usr/local/bin/selftar
 
-selftar
+sudo chmod +x /usr/local/bin/selftar
+
+selftar ./dir_to_archive
 ```
 
 ### MyMan Installation
-```
+
+```bash
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/myman -O /usr/local/bin/myman
+
+sudo chmod +x /usr/local/bin/myman
 
 myman
 ```
@@ -77,7 +94,8 @@ myman
 ---
 
 ### ***macspoof@.service*** Installation
-```
+
+```bash
 sudo pacman -S macchanger
 
 sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/systemd-unit/macspoof@.service -O /etc/systemd/system/macspoof@.service
