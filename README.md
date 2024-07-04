@@ -3,19 +3,21 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 1. [Say](https://github.com/FlareXes/Micro-Utils/blob/main/bin/say): Text to speech, better quality and easier setup than speak.
 
-2. [YtFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
+2. [Nyx.sh](https://github.com/FlareXes/Micro-Utils/blob/main/bin/nyx.sh): Encrypt and decrypt file and directory first using 7z then with openssl.
 
-3. [MyMan](https://github.com/FlareXes/Micro-Utils/blob/main/bin/myman): Preview man pages
+3. [YtFzf](https://github.com/FlareXes/Micro-Utils/blob/main/bin/ytfzf): Search youtube video using fzf then play in mpv, simply better version of YtPlay
 
-4. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
+4. [MyMan](https://github.com/FlareXes/Micro-Utils/blob/main/bin/myman): Preview man pages
 
-5. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
+5. [GitMailChanger](https://github.com/FlareXes/Micro-Utils/blob/main/bin/gitmailchanger): Remove all commits E-mail addresses and Names then add new ones
 
-6.  [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
+6. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
 
-7.  [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
+7.  [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
 
-8.  [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
+8.  [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
+
+9.  [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
 
 # Installations
 
@@ -27,6 +29,17 @@ sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/say -O
 sudo chmod +x /usr/local/bin/say
 
 echo "Hello World" | say
+```
+
+### Nyx.sh Installation
+
+```bash
+sudo wget https://raw.githubusercontent.com/FlareXes/Micro-Utils/main/bin/nyx.sh -O /usr/local/bin/nyx.sh
+
+sudo chmod +x /usr/local/bin/nyx.sh
+
+# to print usage
+nyx.sh
 ```
 
 ### YtFzf Installation
