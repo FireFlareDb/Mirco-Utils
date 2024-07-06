@@ -3,19 +3,6 @@
 # Author: FlareXes
 # License: Unlicense
 # Original Script: https://github.com/FlareXes/Micro-Utils/blob/main/bin/nyx.sh
-#
-# Description:
-# This script first encrypts a specified file or directory using 7z with AES-256 encryption,
-# further encrypts the resulting archive using openssl with AES-256-CBC encryption.
-# I used double encryption to support directory encryption to avoid the need for recursive encryption.
-#
-# Usage:
-# To encrypt a file or directory:
-# ./nyx.sh encrypt <file_path>
-#
-# To decrypt a file or directory:
-# ./nyx.sh decrypt <encrypted_file>
-
 
 encrypt_file() {
     local file_path="$1"
@@ -40,7 +27,7 @@ encrypt_file() {
 
     # Encrypt with openssl (using AES-256-CBC encryption)
     echo "Encrypting with openssl..."
-    openssl enc -aes-256-cbc -salt -in "${file_path}.7z" -out "${file_path}.7z.enc" -pass pass:"${password_openssl}"
+    openssl enc -aes-256-cbc -salt -pbkdf2 -iter 2000000 -md sha512 -base64 -in "${file_path}.7z" -out "${file_path}.7z.enc" -pass pass:"${password_openssl}"
 
     # Check if openssl encryption was successful
     if [ $? -ne 0 ]; then
@@ -60,7 +47,7 @@ decrypt_file() {
 
     # Decrypt with openssl
     echo "Decrypting with openssl..."
-    openssl enc -d -aes-256-cbc -in "${encrypted_file}" -out "${encrypted_file%.enc}" -pass pass:"${password_openssl}"
+    openssl enc -d -aes-256-cbc -pbkdf2 -iter 2000000 -md sha512 -base64 -in "${encrypted_file}" -out "${encrypted_file%.enc}" -pass pass:"${password_openssl}"
 
     # Check if openssl decryption was successful
     if [ $? -ne 0 ]; then
