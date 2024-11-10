@@ -1,11 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Define source and destination paths
-source_dir="/home/user/"
-destination_dir="/media/backup/$(date +'%F')"
+SOURCE="$HOME/"
+DESTINATION="/media/Lifesupport/Lifeshift/$(date +%F)/"
 
-# Define max file size (possible values: e.g., "5G" for 5 gigabytes, "100M" for 100 megabytes)
-max_size="1G"
+EXCLUDE_FILE="$HOME/.rsync-exclude.txt"
 
-# Execute rsync command and measure time
-time rsync -azh --delete --info=PROGRESS2 --max-size="$max_size" --exclude={'.cache/','Steam/'} "$source_dir" "$destination_dir"
+# Run rsync with the specified options
+rsync -azh --info=PROGRESS2 --delete --exclude-from="$EXCLUDE_FILE" "$SOURCE" "$DESTINATION"
+
+if [[ "$?" -eq 0 ]]; then
+    notify-send "Backup Successful"
+else
+    notify-send "Backup Failed"
+fi
