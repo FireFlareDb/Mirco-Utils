@@ -13,11 +13,13 @@ This Repository Contains Amazing Utilities For Simpler Tasks.
 
 6. [Selftar](https://github.com/FlareXes/Micro-Utils/blob/main/bin/selftar): Archive files or directories and create a self extracting shell script
 
-7.  [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
+7. [Earbuds](https://github.com/FlareXes/Micro-Utils/blob/main/bin/earbuds): Connect bluetooth device
 
-8.  [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
+8. [Speak](https://github.com/FlareXes/Micro-Utils/blob/main/bin/speak): Multiple tts piper voice auto-selection
 
-9.  [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
+9. [Its-Backup-Time](https://github.com/FlareXes/Micro-Utils/blob/main/bin/its-backup-time): Syncs files from a source directory to a destination directory, excluding certain folders, with a maximum file size limit
+
+10. [custom-commit.sh](https://github.com/FlareXes/Micro-Utils/blob/main/bin/custom-commit.sh): Commit with custom date
 
 # Installations
 
